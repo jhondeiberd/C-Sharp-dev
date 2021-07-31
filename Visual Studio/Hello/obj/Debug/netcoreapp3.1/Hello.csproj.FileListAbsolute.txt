@@ -1,0 +1,26 @@
+C:\Users\isi\OneDrive - Institut supérieur d'informatique\Program\7. Programming in a graphical environment\Class\Visual Studio\Hello\bin\Debug\netcoreapp3.1\Hello.exe
+C:\Users\isi\OneDrive - Institut supérieur d'informatique\Program\7. Programming in a graphical environment\Class\Visual Studio\Hello\bin\Debug\netcoreapp3.1\Hello.deps.json
+C:\Users\isi\OneDrive - Institut supérieur d'informatique\Program\7. Programming in a graphical environment\Class\Visual Studio\Hello\bin\Debug\netcoreapp3.1\Hello.runtimeconfig.json
+C:\Users\isi\OneDrive - Institut supérieur d'informatique\Program\7. Programming in a graphical environment\Class\Visual Studio\Hello\bin\Debug\netcoreapp3.1\Hello.runtimeconfig.dev.json
+C:\Users\isi\OneDrive - Institut supérieur d'informatique\Program\7. Programming in a graphical environment\Class\Visual Studio\Hello\bin\Debug\netcoreapp3.1\Hello.dll
+C:\Users\isi\OneDrive - Institut supérieur d'informatique\Program\7. Programming in a graphical environment\Class\Visual Studio\Hello\bin\Debug\netcoreapp3.1\Hello.pdb
+C:\Users\isi\OneDrive - Institut supérieur d'informatique\Program\7. Programming in a graphical environment\Class\Visual Studio\Hello\obj\Debug\netcoreapp3.1\Hello.csprojAssemblyReference.cache
+C:\Users\isi\OneDrive - Institut supérieur d'informatique\Program\7. Programming in a graphical environment\Class\Visual Studio\Hello\obj\Debug\netcoreapp3.1\Hello.AssemblyInfoInputs.cache
+C:\Users\isi\OneDrive - Institut supérieur d'informatique\Program\7. Programming in a graphical environment\Class\Visual Studio\Hello\obj\Debug\netcoreapp3.1\Hello.AssemblyInfo.cs
+C:\Users\isi\OneDrive - Institut supérieur d'informatique\Program\7. Programming in a graphical environment\Class\Visual Studio\Hello\obj\Debug\netcoreapp3.1\Hello.csproj.CoreCompileInputs.cache
+C:\Users\isi\OneDrive - Institut supérieur d'informatique\Program\7. Programming in a graphical environment\Class\Visual Studio\Hello\obj\Debug\netcoreapp3.1\Hello.dll
+C:\Users\isi\OneDrive - Institut supérieur d'informatique\Program\7. Programming in a graphical environment\Class\Visual Studio\Hello\obj\Debug\netcoreapp3.1\Hello.pdb
+C:\Users\isi\OneDrive - Institut supérieur d'informatique\Program\7. Programming in a graphical environment\Class\Visual Studio\Hello\obj\Debug\netcoreapp3.1\Hello.genruntimeconfig.cache
+C:\Users\isi\d05-e21-july-jhon\Visual Studio\Hello\bin\Debug\netcoreapp3.1\Hello.exe
+C:\Users\isi\d05-e21-july-jhon\Visual Studio\Hello\bin\Debug\netcoreapp3.1\Hello.deps.json
+C:\Users\isi\d05-e21-july-jhon\Visual Studio\Hello\bin\Debug\netcoreapp3.1\Hello.runtimeconfig.json
+C:\Users\isi\d05-e21-july-jhon\Visual Studio\Hello\bin\Debug\netcoreapp3.1\Hello.runtimeconfig.dev.json
+C:\Users\isi\d05-e21-july-jhon\Visual Studio\Hello\bin\Debug\netcoreapp3.1\Hello.dll
+C:\Users\isi\d05-e21-july-jhon\Visual Studio\Hello\bin\Debug\netcoreapp3.1\Hello.pdb
+C:\Users\isi\d05-e21-july-jhon\Visual Studio\Hello\obj\Debug\netcoreapp3.1\Hello.csprojAssemblyReference.cache
+C:\Users\isi\d05-e21-july-jhon\Visual Studio\Hello\obj\Debug\netcoreapp3.1\Hello.AssemblyInfoInputs.cache
+C:\Users\isi\d05-e21-july-jhon\Visual Studio\Hello\obj\Debug\netcoreapp3.1\Hello.AssemblyInfo.cs
+C:\Users\isi\d05-e21-july-jhon\Visual Studio\Hello\obj\Debug\netcoreapp3.1\Hello.csproj.CoreCompileInputs.cache
+C:\Users\isi\d05-e21-july-jhon\Visual Studio\Hello\obj\Debug\netcoreapp3.1\Hello.dll
+C:\Users\isi\d05-e21-july-jhon\Visual Studio\Hello\obj\Debug\netcoreapp3.1\Hello.pdb
+C:\Users\isi\d05-e21-july-jhon\Visual Studio\Hello\obj\Debug\netcoreapp3.1\Hello.genruntimeconfig.cache
