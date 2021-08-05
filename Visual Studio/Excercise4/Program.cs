@@ -221,9 +221,9 @@ namespace Excercise4
             question3.program.Question();
             question4.program.Question();
             question5.program.Question();
-            question6.program.Question();
-            question7.program.Question();
-            question8.program.Question();
+            //question6.program.Question();
+            //question7.program.Question();
+            //question8.program.Question();
 
         }
     }

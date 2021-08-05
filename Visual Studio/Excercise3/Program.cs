@@ -8,8 +8,7 @@ namespace Excercise3
 {
     /*Write a method to find a value in an array.
     The method returns the index of the searched value in the array.
-    Manage the case when the given value is not found.
-    */
+    Manage the case when the given value is not found.*/
     class Program
     {
         static void Main(string[] args)
@@ -42,6 +41,5 @@ namespace Excercise3
                 Console.Write("\nYour number {0} is not found in the array\n", number);
             }
         }
-
     }
 }

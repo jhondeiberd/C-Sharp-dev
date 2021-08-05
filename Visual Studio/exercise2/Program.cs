@@ -248,16 +248,16 @@ namespace exercise2
     {
         static void Main(string[] args)
         {
-            //Types_variables.Program.Question1();
-            //Types_variables.Program.Question2();
-            //Types_variables.Program.Question3();
+            Types_variables.Program.Question1();
+            Types_variables.Program.Question2();
+            Types_variables.Program.Question3();
 
-            //FlowControl.Program.Question1();
+            FlowControl.Program.Question1();
 
-            //Enumerations.program.Questions();
+            Enumerations.program.Questions();
 
-            //Array.Program.Question1();
-            //Array.Program.Question2();
+            Array.Program.Question1();
+            Array.Program.Question2();
             Array.Program.Question3();
 
         }
