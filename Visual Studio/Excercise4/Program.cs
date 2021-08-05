@@ -167,7 +167,7 @@ namespace Excercise4
         {
             public static void Question()
             {
-
+                
             }
         }
     }
@@ -216,9 +216,9 @@ namespace Excercise4
     {
         static void Main(string[] args)
         {
-            /*question1.program.Question();
+            question1.program.Question();
             question2.program.Question();
-            question3.program.Question();*/
+            question3.program.Question();
             question4.program.Question();
             question5.program.Question();
             question6.program.Question();
