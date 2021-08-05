@@ -146,13 +146,101 @@ namespace exercise2
     {
         class Program
         {
-            int[] arr = { 1, 2, 3 };
+            /*1. Write a program, which creates an array of 20 elements of type integer and initializes each of the elements with a 
+             value equals to the index of the element multiplied by 5. Print the elements to the console.*/
+            public static void PrintArray(int[] arr)
+            {
+                foreach (int item in arr)
+                {
+                    Console.WriteLine(item);
+                }
+            }
 
-            //foreach(int i in arr)
-            //{
-            //    Console.WriteLine(arr);
-            //    Console.WriteLine(arr);
-            //}
+            public static int[] ReadArray()
+            {
+                Console.Write("Please enter length of the array: ");
+                int length = int.Parse(Console.ReadLine());
+                int[] array = new int[length];
+                for (int i = 0; i < length; i++)
+                {
+                    Console.Write("Please enter number in position " + i + ": ");
+                    array[i] = int.Parse(Console.ReadLine());
+                }
+                return array;
+            }
+
+            public static Boolean equalsArrays(int[] array1, int[] array2)
+            {
+                bool validation = true;
+                if (array1.Length == array2.Length)
+                {
+                    for (int i = 0; i < array1.Length; i++)
+                    {
+                        if ((array1[i] - array2[i]) != 0)
+                        {
+                            validation = false;
+                            break;
+                        }
+                    }
+                }
+                return validation;
+            }
+
+            public static void Question1()
+            {
+                int numArray = 20;
+                int[] arr = new int[numArray];
+
+                for (int i = 0; i < numArray; i++)
+                {
+                    arr[i] = i * 5;
+                }
+                PrintArray(arr);
+            }
+
+        /*2. Write a method, which reads two arrays from the console and checks whether they are equal (two arrays are equal 
+            *when they are of equal length and all of their elements, which have the same index, are equal).*/
+            public static void Question2()
+            {
+                int[] array1, array2;
+                array1 = ReadArray();
+                array2 = ReadArray();
+                Console.Write("\nArray one: \n"); PrintArray(array1);
+                Console.Write("\nArray two: \n"); PrintArray(array2);
+                if ((equalsArrays(array1, array2)) is true)
+                {
+                    Console.WriteLine("\nThe two arrays are equal");
+                }
+                else
+                {
+                    Console.WriteLine("\nThe two arrays are not equal");
+                }
+                Console.ReadLine();
+            }
+
+            /*3. Sorting an array means to arrange its elements in an increasing (or decreasing) order. Write a method, 
+             which sorts an array using the algorithm "bubble sort".*/
+            public static void Question3()
+            {
+                int[] array; //= {4,10,3,5,8,12,1};
+                array = ReadArray();
+                int tmp;
+                Console.Write("\nArray without sort: \n"); PrintArray(array);
+                for (int j = 0; j <= array.Length - 2; j++)
+                {
+                    for (int i = 0; i <= array.Length - 2; i++)
+                    {
+                        if (array[i] > array[i + 1])
+                        {
+                            tmp = array[i + 1];
+                            array[i + 1] = array[i];
+                            array[i] = tmp;
+                        }
+                    }
+                }
+                Console.Write("\nArray sorted: \n"); PrintArray(array);
+                Console.ReadLine();
+            }
         }
     }
 
@@ -160,17 +248,17 @@ namespace exercise2
     {
         static void Main(string[] args)
         {
-            Types_variables.Program.Question1();
-            Types_variables.Program.Question2();
-            Types_variables.Program.Question3();
+            //Types_variables.Program.Question1();
+            //Types_variables.Program.Question2();
+            //Types_variables.Program.Question3();
 
-            FlowControl.Program.Question1();
+            //FlowControl.Program.Question1();
 
-            Enumerations.program.Questions();
+            //Enumerations.program.Questions();
 
-            //Array.
-
-
+            //Array.Program.Question1();
+            //Array.Program.Question2();
+            Array.Program.Question3();
 
         }
     }
