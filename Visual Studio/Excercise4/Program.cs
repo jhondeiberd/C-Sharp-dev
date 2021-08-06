@@ -165,9 +165,25 @@ namespace Excercise4
         /*5. Write a method that finds the biggest element of an array. Use that method to implement sorting in ascending order.*/
         class program
         {
+            public static void PrintArray(int[] arr)
+            {
+                foreach (int item in arr)
+                {
+                    Console.WriteLine(item);
+                }
+            }
+            public static void SwapInt(int[] arr)
+            {
+                Array.Sort(arr);
+                PrintArray(arr);
+            }
             public static void Question()
             {
-                
+                int[] array = { 4, 10, 3, 5, 8, 12, 1, 4, 4 };
+                Console.WriteLine("The array sorting is: \n");
+                SwapInt(array);
+                Console.WriteLine("\nThe biggest element of the array is: {0}\n", array[array.Length -1]);
+                Console.ReadLine();
             }
         }
     }
@@ -175,14 +191,25 @@ namespace Excercise4
     namespace question6
     {
         /*6. Write a function named MinMaxArray, to return the minimum and maximum values stored in an array, using reference parameters:
-            float[] data={1.5f, 0.7f, 8.0f}
-            MinMaxArray(data, ref minimum, ref maximum);
-            (after that call, minimum would contain 0.7, and maximum would contain 8.0)*/	
+             float[] data={1.5f, 0.7f, 8.0f}
+             MinMaxArray(data, ref minimum, ref maximum);
+             (after that call, minimum would contain 0.7, and maximum would contain 8.0)*/	
         class program
         {
+            public static void MinMaxArray(float[] data, out float min, out float max)
+            {
+                min = data[0];
+                max = data[0];
+                foreach(float x in data)
+                {
+
+                }
+            }
             public static void Question()
             {
-
+                float[] data = { 1.5f, 0.7f, 8.0f };
+                float theMin = 90, theMax = -124;
+                MinMaxArray(data, out theMin, out theMax);
             }
         }
     }
@@ -191,11 +218,22 @@ namespace Excercise4
     {
         /*7. Write a method named "Double" to calculate the double of an integer number, and modify the data passed as an argument. 
          It must be a "void" function and you must use the out parameter modifier.*/
+        class Calculator
+        {
+            public void Double(int n1, out int doubl)
+            {
+                doubl = n1 + n1;
+            }
+        }
         class program
         {
             public static void Question()
             {
-
+                int n1 = 12;
+                int doubl;
+                new Calculator().Double(n1, out doubl);
+                Console.WriteLine("The double of the integer number {0} is {1}", n1, doubl);
+                Console.ReadLine();
             }
         }
     }
@@ -206,9 +244,22 @@ namespace Excercise4
         You should use the params modifier.*/
         class program
         {
+            public static int Add(int[] arr)
+            {
+                int sum = 0;
+                for (int i = 0; i < arr.Length; i++)
+                {
+                    sum = sum + arr[i];
+                }
+                return sum;
+            }
             public static void Question()
             {
-
+                int[] array = { 4, 10, 3, 5, 8, 12, 1, 4, 4 };
+                int sum = 0;
+                sum = Add(array);
+                Console.WriteLine("The sum of the your number is {0}", sum);
+                Console.ReadLine();
             }
         }
     }
@@ -221,9 +272,9 @@ namespace Excercise4
             question3.program.Question();
             question4.program.Question();
             question5.program.Question();
-            //question6.program.Question();
-            //question7.program.Question();
-            //question8.program.Question();
+            question6.program.Question();
+            question7.program.Question();
+            question8.program.Question();
 
         }
     }
