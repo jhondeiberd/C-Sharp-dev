@@ -145,7 +145,7 @@ namespace Excercise4
             public static void Question()
             {
                 int[] array = { 4, 10, 3, 5, 8, 12, 1, 4, 4 };
-                int totalIndex = array.Length -2;
+                int totalIndex = array.Length - 2;
                 Console.Write("Please enter the position in the array between 1 to {0}): ", totalIndex);
                 int number = int.Parse(Console.ReadLine());
                 while (number <= 0 || number > totalIndex)
@@ -182,7 +182,7 @@ namespace Excercise4
                 int[] array = { 4, 10, 3, 5, 8, 12, 1, 4, 4 };
                 Console.WriteLine("The array sorting is: \n");
                 SwapInt(array);
-                Console.WriteLine("\nThe biggest element of the array is: {0}\n", array[array.Length -1]);
+                Console.WriteLine("\nThe biggest element of the array is: {0}\n", array[array.Length - 1]);
                 Console.ReadLine();
             }
         }
@@ -193,16 +193,19 @@ namespace Excercise4
         /*6. Write a function named MinMaxArray, to return the minimum and maximum values stored in an array, using reference parameters:
              float[] data={1.5f, 0.7f, 8.0f}
              MinMaxArray(data, ref minimum, ref maximum);
-             (after that call, minimum would contain 0.7, and maximum would contain 8.0)*/	
+             (after that call, minimum would contain 0.7, and maximum would contain 8.0)*/
         class program
         {
             public static void MinMaxArray(float[] data, out float min, out float max)
             {
                 min = data[0];
                 max = data[0];
-                foreach(float x in data)
+                foreach (float x in data)
                 {
-
+                    if (x < min)
+                        min = x;
+                    if (x > max)
+                        max = x;
                 }
             }
             public static void Question()
@@ -210,6 +213,8 @@ namespace Excercise4
                 float[] data = { 1.5f, 0.7f, 8.0f };
                 float theMin = 90, theMax = -124;
                 MinMaxArray(data, out theMin, out theMax);
+                Console.WriteLine("Maximium value is {0} and Minimium value is {1}", theMin, theMax);
+                Console.ReadLine();
             }
         }
     }
@@ -267,14 +272,14 @@ namespace Excercise4
     {
         static void Main(string[] args)
         {
-            question1.program.Question();
-            question2.program.Question();
-            question3.program.Question();
-            question4.program.Question();
-            question5.program.Question();
+            //question1.program.Question();
+            //question2.program.Question();
+            //question3.program.Question();
+            //question4.program.Question();
+            //question5.program.Question();
             question6.program.Question();
-            question7.program.Question();
-            question8.program.Question();
+            //question7.program.Question();
+            //question8.program.Question();
 
         }
     }
