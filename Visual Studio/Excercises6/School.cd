@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="Excercises6.School">
+    <Position X="0.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Diagrama.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Excercises6.Human">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <NestedTypes>
+      <Class Name="Excercises6.Human.Program1" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Diagrama.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAg=</HashCode>
+      <FileName>Diagrama.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Excercises6.Student">
+    <Position X="4.25" Y="3.25" Width="1.5" />
+    <NestedTypes>
+      <Class Name="Excercises6.Student.Program1" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Diagrama.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAgAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Diagrama.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Excercises6.Teacher">
+    <Position X="1.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Diagrama.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Excercises6.Classes">
+    <Position X="6.75" Y="1" Width="1.5" />
+    <NestedTypes>
+      <Class Name="Excercises6.Classes.Program1" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Diagrama.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>ACAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Diagrama.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Excercises6.Course">
+    <Position X="6.75" Y="3" Width="1.5" />
+    <NestedTypes>
+      <Class Name="Excercises6.Course.Program1" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Diagrama.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAEAQAABAECAAAAAgAAAAAAAA=</HashCode>
+      <FileName>Diagrama.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
