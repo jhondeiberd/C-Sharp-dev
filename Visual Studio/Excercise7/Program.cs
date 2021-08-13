@@ -25,6 +25,23 @@ namespace Excercise7
             }
         }
     }
+
+    namespace EventDriven
+    {
+        class Door
+        {
+            public int ID { set; get; }
+            public bool IsOpen { set; get; }
+
+
+
+        }
+
+        class DoorOpenEventArgs
+        {
+
+        }
+    }
     class Program
     {
         static void Main(string[] args)
