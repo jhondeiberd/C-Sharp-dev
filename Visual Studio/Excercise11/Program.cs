@@ -37,7 +37,7 @@ namespace Excercise11
 
         public class CaesarCipher
         {
-            public static string abc = "abcdefghijklmñnopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ1234567890";
+            public static string abc = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
             public static void Encrypted(string inputFilePath, int caesarShift, string outputFilePath)
             {
                 if (File.Exists(outputFilePath))
@@ -62,11 +62,11 @@ namespace Excercise11
                 File.WriteAllText(outputFilePath, messageEncripted);
                 Console.WriteLine("File Encrypted in the path {0}", Path.GetFullPath(outputFilePath));
             }
-            public static int GetPosChar(char c)
+            public static int GetPosChar(char simbol)
             {
                 for (int i = 0; i < abc.Length; i++)
                 {
-                    if (c == abc[i])
+                    if (simbol == abc[i])
                         return i;
                 }
                 return -1;
