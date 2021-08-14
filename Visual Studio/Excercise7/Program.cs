@@ -26,19 +26,20 @@ namespace Excercise7
         }
     }
 
-    namespace EventDriven
+    namespace DoorOpenEvent
     {
+        public delegate void EventHandler(string str);
         class Door
         {
+            private bool isOpen = true;
             public int ID { set; get; }
             public bool IsOpen { set; get; }
-
-
-
+            public EventHandler<DoorOpenEventArgs> DoorOpenEvent;
         }
 
         class DoorOpenEventArgs
         {
+            public static DateTime Now { get; }
 
         }
     }

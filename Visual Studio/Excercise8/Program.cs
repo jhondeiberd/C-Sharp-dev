@@ -76,6 +76,7 @@ namespace Excercise8
     }
     namespace Dictionary
     {
+        //Dictionary<int, Person > persons = new Dictionary<int, Person>();
 
     }
     class Program
