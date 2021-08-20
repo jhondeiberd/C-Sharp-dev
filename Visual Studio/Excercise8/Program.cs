@@ -103,13 +103,13 @@ namespace Excercise8
                 }
             }
 
-        Console.WriteLine("------Excercises List<T>------");
-        Console.WriteLine("Please enter the first number to revise numbers prime");
-        int first = int.Parse(Console.ReadLine());
-        Console.WriteLine("Please enter the second number to revise numbers prime");
-        int second = int.Parse(Console.ReadLine());
-        ListT.Prime.Print(first,second);
-        Console.ReadLine();
+            Console.WriteLine("------Excercises List<T>------");
+            Console.WriteLine("Please enter the first number to revise numbers prime");
+            int first = int.Parse(Console.ReadLine());
+            Console.WriteLine("Please enter the second number to revise numbers prime");
+            int second = int.Parse(Console.ReadLine());
+            ListT.Prime.Print(first, second);
+            Console.ReadLine();
 
         }
     }
