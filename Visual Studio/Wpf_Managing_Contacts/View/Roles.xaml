@@ -1,0 +1,21 @@
+﻿<Window x:Class="View.Roles"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:View"
+        mc:Ignorable="d"
+        Title="Roles" Height="570" Width="1200">
+    <Grid>
+        <TreeView x:Name="Tv_ControlesMenu" HorizontalAlignment="Left" Height="363" Margin="36,97,0,0" VerticalAlignment="Top" Width="736" Loaded="Tv_ControlesMenu_Loaded"/>
+        <ComboBox x:Name="ComBox_ListRoles" HorizontalAlignment="Left" Margin="259,38,0,0" VerticalAlignment="Top" Width="253" FontSize="16"/>
+        <Button Content="Save" HorizontalAlignment="Left" Margin="325,480,0,0" VerticalAlignment="Top" Width="148" Height="30" FontSize="16"/>
+        <DataGrid HorizontalAlignment="Left" AutoGenerateColumns="False" x:Name="GridListRoles" Height="363" Margin="826,97,0,0" VerticalAlignment="Top" Width="318" Loaded="GridListRoles_Loaded" AddingNewItem="GridListRoles_AddingNewItem" RowEditEnding="GridListRoles_RowEditEnding" PreviewKeyDown="GridListRoles_PreviewKeyDown">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Id" Width="50" Binding="{Binding Id}" />
+                <DataGridTextColumn Header="Name Role" Width="150" Binding="{Binding Name}" />
+            </DataGrid.Columns>
+        </DataGrid>
+
+    </Grid>
+</Window>

@@ -1,0 +1,21 @@
+﻿<Window x:Class="View.View_ListContacts"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:View"
+        mc:Ignorable="d"
+        Title="View Contacts" Height="528.8" Width="800">
+    <Grid Margin="0,0,-0.4,-0.6">
+        <Button x:Name="Btn_ReloadListContact" Content="Reload List" HorizontalAlignment="Left" Margin="635,24,0,0" VerticalAlignment="Top" Width="113" FontSize="14" Click="Btn_ReloadListContact_Click"/>
+        <DataGrid HorizontalAlignment="Left" AutoGenerateColumns="False" Name="GridListContacts" Height="400" Margin="41,63,0,0" VerticalAlignment="Top" Width="709" SelectionChanged="GridListContacts_SelectionChanged" Loaded="GridListContacts_Loaded" RowEditEnding="GridListContacts_RowEditEnding" AddingNewItem="GridListContacts_AddingNewItem" BeginningEdit="GridListContacts_BeginningEdit" PreviewKeyDown="GridListContacts_PreviewKeyDown">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Id" Width="*" Binding="{Binding Id}" />
+                <DataGridTextColumn Header="Name" Width="*" Binding="{Binding Name}" />
+                <DataGridTextColumn Header="Address" Width="*" Binding="{Binding Address}" />
+                <DataGridTextColumn Header="CellPhone" Width="*" Binding="{Binding CellPhone}" />
+            </DataGrid.Columns>
+        </DataGrid>
+
+    </Grid>
+</Window>

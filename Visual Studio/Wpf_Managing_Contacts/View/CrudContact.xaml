@@ -1,0 +1,38 @@
+﻿<Window x:Class="View.CrudContact"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:View"
+        mc:Ignorable="d"
+        Title="Contacts management" Height="700" Width="800">
+    <Grid Loaded="Grid_Loaded" Height="420" Margin="0,0,-0.4,0" VerticalAlignment="Top">
+        <Label x:Name="Lbl_IdContact" Content="Id" HorizontalAlignment="Left" Margin="64,99,0,0" VerticalAlignment="Top" Width="30" FontSize="16" Height="33" RenderTransformOrigin="0.487,0.321"/>
+        <TextBox x:Name="TxtBox_IdContact_Crud" HorizontalAlignment="Left" Height="33" Margin="186,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="238" FontSize="16"/>
+        <Label x:Name="Lbl_NameContact" Content="Name" HorizontalAlignment="Left" Margin="65,128,0,0" VerticalAlignment="Top" Width="61" FontSize="16" Height="33"/>
+        <TextBox x:Name="TxtBox_NameContact_Crud" HorizontalAlignment="Left" Height="33" Margin="186,145,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="405" FontSize="16" RenderTransformOrigin="3.963,0.855"/>
+        <Label x:Name="Lbl_AddressContact" Content="Address" HorizontalAlignment="Left" Margin="64,180,0,0" VerticalAlignment="Top" Width="61" FontSize="16" Height="33"/>
+        <TextBox x:Name="TxtBox_AddressContact_Crud" HorizontalAlignment="Left" Height="32" Margin="186,191,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="406" FontSize="16" RenderTransformOrigin="3.963,0.855"/>
+        <TextBox x:Name="TxtBox_CellPhoneContact_Crud" HorizontalAlignment="Left" Height="33" Margin="186,234,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="238" FontSize="16" RenderTransformOrigin="3.963,0.855"/>
+        <Label x:Name="Lbl_CellPhoneContact" Content="Cell Phone" HorizontalAlignment="Left" Margin="64,234,0,0" VerticalAlignment="Top" Width="90" FontSize="16" Height="33"/>
+        <Button x:Name="Btn_AddContact_Crud" Content="Add" HorizontalAlignment="Left" Margin="637,90,0,0" VerticalAlignment="Top" Width="113" FontSize="14" Click="Btn_AddContact_Crud_Click"/>
+        <Button x:Name="Btn_DelContact_Crud" Content="Remove" HorizontalAlignment="Left" Margin="637,157,0,0" VerticalAlignment="Top" Width="113" FontSize="14" Click="Btn_DelContact_Crud_Click"/>
+        <Button x:Name="Btn_ClearListContact_Crud" Content="Clear" HorizontalAlignment="Left" Margin="637,222,0,0" VerticalAlignment="Top" Width="113" FontSize="14" Click="Btn_ClearListContact_Crud_Click"/>
+        <Label x:Name="Lb_TitleCrudContact" Content="Contacts management" HorizontalContentAlignment="Center" Margin="232,42,232,0" VerticalAlignment="Top" Width="330" FontSize="20"/>
+        <Button x:Name="Btn_EditContact_Crud" Content="Edit" HorizontalAlignment="Left" Margin="637,125,0,0" VerticalAlignment="Top" Width="113" FontSize="14" Click="Btn_EditContact_Crud_Click"/>
+        <Button x:Name="Btn_ClearListContact_Crud_Copy" Content="Close" HorizontalAlignment="Left" Margin="637,255,0,0" VerticalAlignment="Top" Width="113" FontSize="14" Click="Btn_ClearListContact_Crud_Copy_Click"/>
+        <Button x:Name="Btn_SearchListContact_Crud" Content="Search" HorizontalAlignment="Left" Margin="637,190,0,0" VerticalAlignment="Top" Width="113" FontSize="14" Click="Btn_SearchListContact_Crud_Click"/>
+        <Label x:Name="Lbl_ModeCrudFromForm" Content="" HorizontalAlignment="Left" HorizontalContentAlignment="Right" Margin="62,13,0,0" VerticalAlignment="Top" Width="665" Foreground="#FF1F3FED" FontSize="16"/>
+        <ListView x:Name="Lw_CrudFromForm"  HorizontalAlignment="Left" Margin="62,290,0,-225" Width="688" SelectionChanged="ListView_SelectionChanged">
+            <ListView.View>
+                <GridView AllowsColumnReorder="true">
+                    <GridViewColumn Header="Id" Width="70" DisplayMemberBinding="{Binding Id}" />
+                    <GridViewColumn Header="Name" Width="220" DisplayMemberBinding="{Binding Name}" />
+                    <GridViewColumn Header="Address" Width="220" DisplayMemberBinding="{Binding Address}" />
+                    <GridViewColumn Header="CellPhone" Width="100"  DisplayMemberBinding="{Binding CellPhone}" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+    </Grid>
+</Window>

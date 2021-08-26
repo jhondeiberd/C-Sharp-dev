@@ -1,0 +1,67 @@
+﻿<Window x:Class="View.Menu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:View"
+        mc:Ignorable="d"
+        Title="Menu" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush/>
+        </Grid.Background>
+        <Menu x:Name="Menu_App_Contacts" HorizontalAlignment="Left" Height="30" Margin="10,10,0,0" VerticalAlignment="Top" Width="378">
+            <MenuItem x:Name="MeItem_File" Header="_File" FontSize="16">
+                <MenuItem x:Name="Menu_Exit" Header="_Exit" Click="Menu_Exit_Click" />
+            </MenuItem>
+            <MenuItem x:Name="MeItem_Users" Header="_Users" FontSize="16">
+                <MenuItem x:Name="MeItem_AddUser" Header="_Manage Users" Click="MeItem_ManageUser_Click"/>
+                <MenuItem x:Name="MeItem_ManageRolesUser" Header="_Manage Roles" Click="MeItem_ManageRolesUser_Click">
+                </MenuItem>
+            </MenuItem>
+            <MenuItem x:Name="MeItem_Contacts" Header="_Contacts" FontSize="16" Click="MeItem_Contacts_Click">
+                <MenuItem x:Name="MeItem_ContactsManageContacts" Header="_Manage Contacts">
+                    <MenuItem x:Name="MeItem_ContactsManageContactsAdd" Header="Contacts manager" Click="MeItem_ContactsManageContactsAdd_Click"  />
+                    <MenuItem x:Name="MeItem_ContactsManageContactsCrud" Header="View contacts" Click="MenuItem_Click">
+                    </MenuItem>
+
+                </MenuItem>
+            </MenuItem>
+        </Menu>
+        <Label x:Name="Lbl_UserMenuTitle" Content="User:" HorizontalAlignment="Left" Margin="378,376,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.586,-0.237" Foreground="#FF104AED" FontSize="18"/>
+        <Label x:Name="Lbl_UserMenuResult" HorizontalAlignment="Left" Margin="433,376,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.586,-0.237" Foreground="#FF104AED" FontSize="18"/>
+        <Label x:Name="Lbl_RoleMenuTitle" Content="Role:" HorizontalAlignment="Left" Margin="583,376,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.586,-0.237" Foreground="#FF104AED" FontSize="18"/>
+        <Label x:Name="Lbl_RoleMenuResult" Content="" HorizontalAlignment="Left" Margin="638,376,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.586,-0.237" Foreground="#FF104AED" FontSize="18"/>
+        <TextBlock x:Name="Txb_ListPathFiles" IsEnabled="False" HorizontalAlignment="Left" Margin="44,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="706" Height="251"/>
+        <TextBox x:Name="TxtBox_NameUserMenu" IsReadOnly="true" HorizontalAlignment="Left" Height="23" Margin="428,382,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="16" Foreground="#FF1B33E0"/>
+        <TextBox x:Name="TxtBox_RoleUserMenu" IsReadOnly="true" HorizontalAlignment="Left" Height="23" Margin="636,382,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="16" Foreground="#FF1B33E0"/>
+        <RichTextBox HorizontalAlignment="Left" Height="258" Margin="499,54,0,0" VerticalAlignment="Top" Width="276" TextChanged="RichTextBox_TextChanged" SelectionBrush="#FF0A7BD4" Background="#FF052A5F" Foreground="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}" FontWeight="Bold">
+            <FlowDocument>
+                <Paragraph Margin="60,Auto,Auto,Auto" TextIndent="20">
+                    <Run Text="PROJECT FINAL"/>
+                </Paragraph>
+                <Paragraph>
+                    <Run Text="Programming in a graphical environment"/>
+                </Paragraph>
+                <Paragraph>
+                    <Run Text="STUDENTS"/>
+                </Paragraph>
+                <Paragraph TextIndent="20">
+                    <Run Text="Ricardo Andres Castano Bustos"/>
+                </Paragraph>
+                <Paragraph TextIndent="20">
+                    <Run Text="Jhon Deiber Diaz Parra"/>
+                </Paragraph>
+                <Paragraph TextIndent="20">
+                    <Run/>
+                </Paragraph>
+                <Paragraph>
+                    <Run Text="THEACHER"/>
+                </Paragraph>
+                <Paragraph TextIndent="20">
+                    <Run Text="Stéphane Duval"/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+    </Grid>
+</Window>
