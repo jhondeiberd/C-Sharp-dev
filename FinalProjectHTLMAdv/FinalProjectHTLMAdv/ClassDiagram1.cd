@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="FinalProjectHTLMAdv.AbstractFactory" Collapsed="true">
+    <Position X="1.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEIAAAAAEAAAAAAAQMIAAAAAAAAA=</HashCode>
+      <FileName>AbstractFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FinalProjectHTLMAdv.HawaiianDealer" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>HawaiianDealer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FinalProjectHTLMAdv.Order" Collapsed="true">
+    <Position X="9" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Order.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FinalProjectHTLMAdv.Pizza" Collapsed="true">
+    <Position X="4.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAEAAAQAAAAAEgAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pizza.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FinalProjectHTLMAdv.PizzaOrder" Collapsed="true">
+    <Position X="8.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>PizzaOrder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FinalProjectHTLMAdv.Program" Collapsed="true">
+    <Position X="11.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FinalProjectHTLMAdv.Sandwich" Collapsed="true">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAEAAAQAAAAAEAAAAQAQAAAAAAAAAAAAABCAAAAA=</HashCode>
+      <FileName>Sandwich.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FinalProjectHTLMAdv.SandwichOrder" Collapsed="true">
+    <Position X="10" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgBAAAQAAAAAIAAAAAABBAAABAADAA=</HashCode>
+      <FileName>SandwichOrder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FinalProjectHTLMAdv.VegeterianDealer" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>VegeterianDealer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FinalProjectHTLMAdv.MeatChichekDealer" Collapsed="true">
+    <Position X="0.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>MeatChichekDealer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FinalProjectHTLMAdv.BasicDealer" Collapsed="true">
+    <Position X="2.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>BasicDealer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FinalProjectHTLMAdv.OrderSelection" Collapsed="true">
+    <Position X="9" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>OrderSelection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FinalProjectHTLMAdv.PizzaHawaiian" Collapsed="true">
+    <Position X="4.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgAAAAQAgAAEIAAAAAAAAABAAAAAQA=</HashCode>
+      <FileName>PizzaHawaiian.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="FinalProjectHTLMAdv.PizzaMeatChicken" Collapsed="true">
+    <Position X="4.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgAAAAQAgAAEIAAAAAAAAABAAAAAQA=</HashCode>
+      <FileName>PizzaMeatChicken.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="FinalProjectHTLMAdv.PizzaBasic" Collapsed="true">
+    <Position X="4.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgAAAAQAgAAEIAAAAAAAAABAAAAAQA=</HashCode>
+      <FileName>PizzaBasic.cs</FileName>
+      <NewMemberFileName>PizzaHawaiian.cs</NewMemberFileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="FinalProjectHTLMAdv.PizzaVegeterian" Collapsed="true">
+    <Position X="4.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgAAAAQAgAAEIAAAAAAAAABAAAAAQA=</HashCode>
+      <FileName>PizzaVegeterian.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="FinalProjectHTLMAdv.SandwichBasic" Collapsed="true">
+    <Position X="6.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgBAAAQAgAAAIAAAAAABBAAABAABAA=</HashCode>
+      <FileName>SandwichBasic.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="FinalProjectHTLMAdv.SandwichHawaiian" Collapsed="true">
+    <Position X="6.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgBAAAQAgAAAIAAAAAABBAAABAABAA=</HashCode>
+      <FileName>SandwichHawaiian.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="FinalProjectHTLMAdv.SandwichHealthy" Collapsed="true">
+    <Position X="6.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgBAAAQAgAAAIAAAAAABBAAABAABAA=</HashCode>
+      <FileName>SandwichHealthy.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="FinalProjectHTLMAdv.SandwichMeatChicken" Collapsed="true">
+    <Position X="6.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgBAAAQAgAAAIAAAAAABBAAABAABAA=</HashCode>
+      <FileName>SandwichMeatChicken.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="FinalProjectHTLMAdv.SandwichVeggy" Collapsed="true">
+    <Position X="6.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgBAAAQAgAAAIAAAAAABBAAABAABAA=</HashCode>
+      <FileName>SandwichVeggy.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="FinalProjectHTLMAdv.PizzaBuilder" Collapsed="true">
+    <Position X="4.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgAAAAQAgAAEIAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>PizzaBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="FinalProjectHTLMAdv.SandwichBuilder" Collapsed="true">
+    <Position X="6.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgAAAAQAgAAAIAAAAAABBAAABAABAA=</HashCode>
+      <FileName>SandwichBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="FinalProjectHTLMAdv.Kinds" Collapsed="true">
+    <Position X="11.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAQAAAAAAAAAAAAAAgAAAAQAAAAAAAAAgA=</HashCode>
+      <FileName>Kinds.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
