@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace Developer
 {
@@ -12,7 +14,7 @@ namespace Developer
     {
         static void Main(string[] args)
         {
-            {//objects
+            /*objects
              //adress person1;
              //person1.number = 50;
              //person1.street = "Quintin";
@@ -30,15 +32,15 @@ namespace Developer
             //person2.Age = 41;
             //Console.WriteLine("Persona 2 Name: {0} Age: {1}", person2.Name, person2.Age);
             //Console.WriteLine("Persona 1 Name: {0} Age: {1}", person1.Name, person1.Age);
-            }
-
+ 
             //Console.WriteLine("Hello world");
             //Console.ReadKey();
             //int result = Square(5);
             //Console.WriteLine(result);
             //Console.ReadKey();
+            */
 
-            /*
+            /*Constructor
             Color color1 = new Color();
             color1.R = 254;
             color1.G = 500;
@@ -48,10 +50,7 @@ namespace Developer
             Console.ReadKey();
             */
 
-
-
-            //CONDITIONALS
-            {
+            /*CONDITIONALS
                 //if
                 //if (1 > 0)
                 //{
@@ -86,8 +85,9 @@ namespace Developer
                 //        break;
                 //}
             }
+            */
 
-            {//ITERATIONS
+            /*ITERATIONS
                 //Console.Write("Type the number of times:\n");
                 //int times = Convert.ToInt32(Console.ReadLine());
                 ////Do while
@@ -108,9 +108,9 @@ namespace Developer
                 //}
                 //Console.WriteLine("Repeats " + times);
                 //Console.ReadKey();
-            }
+            */
 
-            {//VARIABLES
+            /*VARIABLES
                 //int a = 10;
                 //long i = 1;
                 //double e = 10.5;
@@ -129,17 +129,15 @@ namespace Developer
                 //b = a;
                 //double x = 12.89;
                 //long y = (long)x;
-            }
+            */
 
-            //JUMP SENTENCES
-            {
+            /*JUMP SENTENCES
                 //break;
                 //continue;
                 //goto;
-            }
+            */
 
-            //INTERFACE
-            {
+            /*INTERFACE
                 //Tank tank1 = new Tank();
                 //tank1.Turn(45, "right");
                 //tank1.Shoot();
@@ -147,52 +145,103 @@ namespace Developer
                 //tank1.Reload();
                 //tank1.Accelerate(10);
                 //Console.ReadKey();
-            }
+            */
 
-            //EXPLICIT IMPLEMENTATION INTERFACE
+            /*EXPLICIT IMPLEMENTATION INTERFACE
+            //    Square square1 = new Square(15.2f, 33.5f);
+            //    IMetricMeasure square1Metric = square1;
+            //    IEnglishMeasure square1English = square1;
+
+            //    Console.WriteLine("Square 1 Large: {0} cm", square1Metric.Large());
+            //    Console.WriteLine("Square 1 Width: {0} cm", square1Metric.Width());
+            //    Console.WriteLine("Square 1 Large: {0}'' ", square1English.Large());
+            //    Console.WriteLine("Square 1 Width: {0}'' ", square1English.Width());
+            //    Console.ReadKey();
+            */
+
+            /*COLLECTIONS
+            /*LIST AND ARRAYLIST
+            //var name = new List<string> { "First", "Second", "Third" };
+            //var name = new List<string>();
+            ArrayList name = new ArrayList();
+            name.Add(10.11);
+            name.Add(2);
+            name.Add("Third");
+            Console.WriteLine(name[2]);
+            name.Add("Fourth");
+            name.Add("Fifth");
+            name.Remove(name[2]);
+            Console.WriteLine(name[2]);
+
+            foreach (var state in name)
             {
-                Square square1 = new Square(15.2f, 33.5f);
-                IMetricMeasure square1Metric = square1;
-                IEnglishMeasure square1English = square1;
-
-                Console.WriteLine("Square 1 Large: {0} cm", square1Metric.Large());
-                Console.WriteLine("Square 1 Width: {0} cm", square1Metric.Width());
-                Console.WriteLine("Square 1 Large: {0}'' ", square1English.Large());
-                Console.WriteLine("Square 1 Width: {0}'' ", square1English.Width());
-                Console.ReadKey();
-
+                Console.Write(state + " \n");
             }
+            Console.ReadKey();
+            */
+            /*DICTIONARY
+            Dictionary<string, Element> elements = new Dictionary<string, Element>
+            {
+                {"K", new Element("K", "Potasio", 19) },
+                {"Na", new Element("Na", "Sodio", 11) },
+                {"Cl", new Element("Cl", "Cloro", 17) }
+            };
+            
+            foreach (KeyValuePair<string, Element> kvp in elements)
+            {
+                Element element1 = kvp.Value;
+                Console.WriteLine("Key: {0} Name: {1} Number: {2}", kvp.Key, element1.Name, element1.AtomicNumber);
+            }
+            Console.ReadKey();
+            */
+
+
         }
 
-        //METHODS
+        /*METHODS
         public static int Square(int x)
         {
             return x * x;
         }
+        */
     }
 }
 
-//STRUCTURE
-//struct adress
-//{
-//    public int number;
-//    public string street;
-//    public int apt;
-//    public string city;
+/*STRUCTURE
+struct adress
+{
+    public int number;
+    public string street;
+    public int apt;
+    public string city;
 
-//    public string getadress()
-//    {
-//        return number + " " + street + " apt. " + apt + ", " + city;
-//    }
-//}
+    public string getadress()
+    {
+        return number + " " + street + " apt. " + apt + ", " + city;
+    }
+}
 
-//public class Person
-//{
-//    public string Name;
-//    public int Age;
-//}
+public class Person
+{
+    public string Name;
+    public int Age;
+}
 
-//CONSTRUCTORS
+public class Element
+{
+    public string Symbol;
+    public string Name;
+    public int AtomicNumber;
+    public Element(string symbol, string name, int atomicNumber)
+    {
+        Symbol = symbol;
+        Name = name;
+        AtomicNumber = atomicNumber;
+    }
+}
+*/
+
+/*CONSTRUCTORS
 public class Color
 {
     private int r;
@@ -234,8 +283,9 @@ public class Color
         }
     }
 }
+*/
 
-//INTERFACES
+/*INTERFACES
 //interface ICar 
 //{
 //    void Accelerate(int kmh);
@@ -275,30 +325,33 @@ public class Color
 //        Console.WriteLine("Tank is turning {0} grades to the {1}", angle, direction);
 //    }
 //}
+*/
 
-//EXPLICIT IMPLEMENTATION OF INTERFACES
-interface IMetricMeasure
-{
-    float Large();
-    float Width();
-}
-interface IEnglishMeasure
-{
-    float Large();
-    float Width();
-}
-public class Square : IMetricMeasure, IEnglishMeasure
-{
-    public float LargeInches;
-    public float WidthInches;
-    public Square(float LargeInches, float WidthInches)
-    {
-        this.LargeInches = LargeInches;
-        this.WidthInches = WidthInches;
-    }
+/*EXPLICIT IMPLEMENTATION OF INTERFACES
+//interface IMetricMeasure
+//{
+//    float Large();
+//    float Width();
+//}
+//interface IEnglishMeasure
+//{
+//    float Large();
+//    float Width();
+//}
+//public class Square : IMetricMeasure, IEnglishMeasure
+//{
+//    public float LargeInches;
+//    public float WidthInches;
+//    public Square(float LargeInches, float WidthInches)
+//    {
+//        this.LargeInches = LargeInches;
+//        this.WidthInches = WidthInches;
+//    }
 
-    float IEnglishMeasure.Large() { return LargeInches; }
-    float IEnglishMeasure.Width() { return WidthInches; }
-    float IMetricMeasure.Large() { return LargeInches * 2.54f; }
-    float IMetricMeasure.Width() { return WidthInches * 2.54f; }
-}
+//    float IEnglishMeasure.Large() { return LargeInches; }
+//    float IEnglishMeasure.Width() { return WidthInches; }
+//    float IMetricMeasure.Large() { return LargeInches * 2.54f; }
+//    float IMetricMeasure.Width() { return WidthInches * 2.54f; }
+//}
+*/
+
