@@ -151,7 +151,7 @@ namespace Developer
 
             //EXPLICIT IMPLEMENTATION INTERFACE
             {
-                Square square1 = new Square(15, 33);
+                Square square1 = new Square(15.2f, 33.5f);
                 IMetricMeasure square1Metric = square1;
                 IEnglishMeasure square1English = square1;
 
