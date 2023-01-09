@@ -179,6 +179,7 @@ namespace Developer
             }
             Console.ReadKey();
             */
+
             /*DICTIONARY
             Dictionary<string, Element> elements = new Dictionary<string, Element>
             {
@@ -214,7 +215,6 @@ namespace Developer
             Console.WriteLine("Delegate multiMinusHiDel:");
             multiMinusHiDel("Jhon");
             Console.ReadKey();
-            */
 
             BookDB bookList = new BookDB();
             AddBook(bookList);
@@ -227,6 +227,7 @@ namespace Developer
 
             Console.WriteLine("The total price of all books is: {0}", totalBook.total);
             Console.ReadKey();
+            */
 
         }
         /*DELEGATE
@@ -240,7 +241,6 @@ namespace Developer
         }
         static void Hello(string Mens) { Console.WriteLine("Hello, {0}!", Mens); }
         static void Bye(string Mens) { Console.WriteLine("Goodbye, {0}!", Mens); }
-        */
         static void PrintBook(Book b)
         {
             Console.WriteLine("     {0}",b.Title );
@@ -252,7 +252,7 @@ namespace Developer
             bookDB.AddBook("The unicode 2.0", "Consortium", 39.95f, true);
             bookDB.AddBook("The MS-DOS Encyclopedia", "Ray Duncan", 129.95f, false);
         }
-
+        */
 
         /*METHODS
         public static int Square(int x)
@@ -300,7 +300,6 @@ public class Element
         AtomicNumber = atomicNumber;
     }
 }
-*/
 public class Book
 {
     public string Title;
@@ -315,7 +314,9 @@ public class Book
         PaperCover = paperCover;
     }
 }
+*/
 
+/*DELEGATE
 public delegate void ProcessBook(Book book);
 
 public class BookDB
@@ -342,6 +343,7 @@ public class Total
         total += book.Price;
     }
 }
+*/
 
 /*CONSTRUCTORS
 public class Color
