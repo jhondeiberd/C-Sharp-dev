@@ -139,13 +139,29 @@ namespace Developer
             }
 
             //INTERFACE
-            Tank tank1 = new Tank();
-            tank1.Turn(45, "right");
-            tank1.Shoot();
-            tank1.Stop();
-            tank1.Reload();
-            tank1.Accelerate(10);
-            Console.ReadKey();
+            {
+                //Tank tank1 = new Tank();
+                //tank1.Turn(45, "right");
+                //tank1.Shoot();
+                //tank1.Stop();
+                //tank1.Reload();
+                //tank1.Accelerate(10);
+                //Console.ReadKey();
+            }
+
+            //EXPLICIT IMPLEMENTATION INTERFACE
+            {
+                Square square1 = new Square(15, 33);
+                IMetricMeasure square1Metric = square1;
+                IEnglishMeasure square1English = square1;
+
+                Console.WriteLine("Square 1 Large: {0} cm", square1Metric.Large());
+                Console.WriteLine("Square 1 Width: {0} cm", square1Metric.Width());
+                Console.WriteLine("Square 1 Large: {0}'' ", square1English.Large());
+                Console.WriteLine("Square 1 Width: {0}'' ", square1English.Width());
+                Console.ReadKey();
+
+            }
         }
 
         //METHODS
@@ -219,43 +235,70 @@ public class Color
     }
 }
 
-    //INTERFACES
-    interface ICar {
-    void Accelerate(int kmh);
-    void Stop();
-    void Turn(int angle, string direction);
-}
+//INTERFACES
+//interface ICar 
+//{
+//    void Accelerate(int kmh);
+//    void Stop();
+//    void Turn(int angle, string direction);
+//}
+//interface IWarWeapon
+//{
+//    void Shoot();
+//    void Reload();
+//}
 
-interface IWarWeapon
+//class Tank : IWarWeapon, ICar
+//{
+//    public void Accelerate(int kmh)
+//    {
+//        Console.WriteLine("Tank is accelerating to {0} km/h", kmh);
+//    }
+
+//    public void Reload()
+//    {
+//        Console.WriteLine("Tank is reloading");
+//    }
+
+//    public void Shoot()
+//    {
+//        Console.WriteLine("Tank is shooting");
+//    }
+
+//    public void Stop()
+//    {
+//        Console.WriteLine("Tank is stopping");
+//    }
+
+//    public void Turn(int angle, string direction)
+//    {
+//        Console.WriteLine("Tank is turning {0} grades to the {1}", angle, direction);
+//    }
+//}
+
+//EXPLICIT IMPLEMENTATION OF INTERFACES
+interface IMetricMeasure
 {
-    void Shoot();
-    void Reload();
+    float Large();
+    float Width();
 }
-
-class Tank : IWarWeapon, ICar
+interface IEnglishMeasure
 {
-    public void Accelerate(int kmh)
+    float Large();
+    float Width();
+}
+public class Square : IMetricMeasure, IEnglishMeasure
+{
+    public float LargeInches;
+    public float WidthInches;
+    public Square(float LargeInches, float WidthInches)
     {
-        Console.WriteLine("Tank is accelerating to {0} km/h", kmh);
+        this.LargeInches = LargeInches;
+        this.WidthInches = WidthInches;
     }
 
-    public void Reload()
-    {
-        Console.WriteLine("Tank is reloading");
-    }
-
-    public void Shoot()
-    {
-        Console.WriteLine("Tank is shooting");
-    }
-
-    public void Stop()
-    {
-        Console.WriteLine("Tank is stopping");
-    }
-
-    public void Turn(int angle, string direction)
-    {
-        Console.WriteLine("Tank is turning {0} grades to the {1}", angle, direction);
-    }
+    float IEnglishMeasure.Large() { return LargeInches; }
+    float IEnglishMeasure.Width() { return WidthInches; }
+    float IMetricMeasure.Large() { return LargeInches * 2.54f; }
+    float IMetricMeasure.Width() { return WidthInches * 2.54f; }
 }
