@@ -12,20 +12,13 @@ namespace Developer
     {
         static void Main(string[] args)
         {
-            //adress person1;
-
-            //person1.number = 50;
-            //person1.street = "Quintin";
-            //person1.apt = 205;
-            //person1.city = "Montreal";
-
-            //Console.WriteLine(person1.getadress());
-
-            //Console.WriteLine("Hello world");
-            //Console.ReadKey();
-            //int result = Square(5);
-            //Console.WriteLine(result);
-            //Console.ReadKey();
+            {//objects
+             //adress person1;
+             //person1.number = 50;
+             //person1.street = "Quintin";
+             //person1.apt = 205;
+             //person1.city = "Montreal";
+             //Console.WriteLine(person1.getadress());
 
             //Person person1 = new Person();
             //person1.Name = "Jhon Diaz";
@@ -37,6 +30,13 @@ namespace Developer
             //person2.Age = 41;
             //Console.WriteLine("Persona 2 Name: {0} Age: {1}", person2.Name, person2.Age);
             //Console.WriteLine("Persona 1 Name: {0} Age: {1}", person1.Name, person1.Age);
+            }
+
+            //Console.WriteLine("Hello world");
+            //Console.ReadKey();
+            //int result = Square(5);
+            //Console.WriteLine(result);
+            //Console.ReadKey();
 
             /*
             Color color1 = new Color();
@@ -48,72 +48,69 @@ namespace Developer
             Console.ReadKey();
             */
 
-            
+
 
             //CONDITIONALS
             {
-            //if
-            //if (1 > 0)
-            //{
-            //    Console.WriteLine("True");
-            //    Console.ReadKey();
-            //} else
-            //{
-            //    Console.WriteLine("False");
-            //    Console.ReadKey();
-            //}
+                //if
+                //if (1 > 0)
+                //{
+                //    Console.WriteLine("True");
+                //    Console.ReadKey();
+                //} else
+                //{
+                //    Console.WriteLine("False");
+                //    Console.ReadKey();
+                //}
 
-            //Case
-            //Console.Write("Type a letter a, b o c\n");
-            //char letter = (char)Console.Read();
-            //switch (letter)
-            //{
-            //    case 'a':
-            //        Console.WriteLine("Lettre a");
-            //        Console.ReadKey();
-            //        break;
-            //    case 'b':
-            //        Console.WriteLine("Lettre b");
-            //        Console.ReadKey();
-            //        break;
-            //    case 'c':
-            //        Console.WriteLine("Lettre c");
-            //        Console.ReadKey();
-            //        break;
-            //    default:
-            //        Console.WriteLine("Other letter");
-            //        Console.ReadKey();
-            //        break;
-            //}
+                //Case
+                //Console.Write("Type a letter a, b o c\n");
+                //char letter = (char)Console.Read();
+                //switch (letter)
+                //{
+                //    case 'a':
+                //        Console.WriteLine("Lettre a");
+                //        Console.ReadKey();
+                //        break;
+                //    case 'b':
+                //        Console.WriteLine("Lettre b");
+                //        Console.ReadKey();
+                //        break;
+                //    case 'c':
+                //        Console.WriteLine("Lettre c");
+                //        Console.ReadKey();
+                //        break;
+                //    default:
+                //        Console.WriteLine("Other letter");
+                //        Console.ReadKey();
+                //        break;
+                //}
             }
 
-            //ITERATIONS
-            {
-            //Console.Write("Type the number of times:\n");
-            //int times = Convert.ToInt32(Console.ReadLine());
-            ////Do while
-            ////int n = 0;
-            ////do
-            ////{
-            ////    Console.WriteLine("Iterations");
-            ////    ++n;
+            {//ITERATIONS
+                //Console.Write("Type the number of times:\n");
+                //int times = Convert.ToInt32(Console.ReadLine());
+                ////Do while
+                ////int n = 0;
+                ////do
+                ////{
+                ////    Console.WriteLine("Iterations");
+                ////    ++n;
+                ////} while (n < times);
+                ////Console.WriteLine("Repeats " + times);
+                ////Console.ReadKey();
 
-            ////} while (n < times);
-            ////Console.WriteLine("Repeats " + times);
-            ////Console.ReadKey();
-
-            //int n1 = 0;
-            //while (n1 < times)
-            //{
-            //    Console.WriteLine("Iterations"); 
-            //    ++n1;
-            //}
-            //Console.WriteLine("Repeats " + times);
-            //Console.ReadKey();
+                //int n1 = 0;
+                //while (n1 < times)
+                //{
+                //    Console.WriteLine("Iterations"); 
+                //    ++n1;
+                //}
+                //Console.WriteLine("Repeats " + times);
+                //Console.ReadKey();
             }
 
-            //VARIABLES
-            {
+            {//VARIABLES
                 //int a = 10;
                 //long i = 1;
                 //double e = 10.5;
@@ -141,6 +138,14 @@ namespace Developer
                 //goto;
             }
 
+            //INTERFACE
+            Tank tank1 = new Tank();
+            tank1.Turn(45, "right");
+            tank1.Shoot();
+            tank1.Stop();
+            tank1.Reload();
+            tank1.Accelerate(10);
+            Console.ReadKey();
         }
 
         //METHODS
@@ -148,71 +153,109 @@ namespace Developer
         {
             return x * x;
         }
-
-
     }
+}
 
-    //STRUCTURE
-    //struct adress
-    //{
-    //    public int number;
-    //    public string street;
-    //    public int apt;
-    //    public string city;
-        
-    //    public string getadress()
-    //    {
-    //        return number + " " + street + " apt. " + apt + ", " + city;
-    //    }
-    //}
+//STRUCTURE
+//struct adress
+//{
+//    public int number;
+//    public string street;
+//    public int apt;
+//    public string city;
 
-    //public class Person
-    //{
-    //    public string Name;
-    //    public int Age;
-    //}
-
-    //CONSTRUCTORS
-//    public class Color
+//    public string getadress()
 //    {
-//        private int r;
-//        private int g;
-//        private int b;
-
-//        public int R
-//        {
-//            get { return r; }
-//            set 
-//            {
-//                if (value <= 255)
-//                { r = value; }
-//                else { r = 255; }
-//            }
-//        }
-
-//        public int G
-//        {
-//            get { return g; }
-//            set
-//            {
-//                if (value <= 255)
-//                { g = value; }
-
-//                { g = 255; }
-//            }
-//        }
-
-//        public int B
-//        {
-//            get { return b; }
-//            set
-//            {
-//                if (value <= 255)
-//                { b = value; }
-
-//                { b = 255; }
-//            }
-//        }
-
+//        return number + " " + street + " apt. " + apt + ", " + city;
 //    }
 //}
+
+//public class Person
+//{
+//    public string Name;
+//    public int Age;
+//}
+
+//CONSTRUCTORS
+public class Color
+{
+    private int r;
+    private int g;
+    private int b;
+
+    public int R
+    {
+        get { return r; }
+        set
+        {
+            if (value <= 255)
+            { r = value; }
+            else { r = 255; }
+        }
+    }
+
+    public int G
+    {
+        get { return g; }
+        set
+        {
+            if (value <= 255)
+            { g = value; }
+
+            { g = 255; }
+        }
+    }
+
+    public int B
+    {
+        get { return b; }
+        set
+        {
+            if (value <= 255)
+            { b = value; }
+
+            { b = 255; }
+        }
+    }
+}
+
+    //INTERFACES
+    interface ICar {
+    void Accelerate(int kmh);
+    void Stop();
+    void Turn(int angle, string direction);
+}
+
+interface IWarWeapon
+{
+    void Shoot();
+    void Reload();
+}
+
+class Tank : IWarWeapon, ICar
+{
+    public void Accelerate(int kmh)
+    {
+        Console.WriteLine("Tank is accelerating to {0} km/h", kmh);
+    }
+
+    public void Reload()
+    {
+        Console.WriteLine("Tank is reloading");
+    }
+
+    public void Shoot()
+    {
+        Console.WriteLine("Tank is shooting");
+    }
+
+    public void Stop()
+    {
+        Console.WriteLine("Tank is stopping");
+    }
+
+    public void Turn(int angle, string direction)
+    {
+        Console.WriteLine("Tank is turning {0} grades to the {1}", angle, direction);
+    }
+}
