@@ -40,16 +40,6 @@ namespace Developer
             //Console.ReadKey();
             */
 
-            /*Constructor
-            Color color1 = new Color();
-            color1.R = 254;
-            color1.G = 500;
-            color1.B = 455;
-
-            Console.WriteLine("Color 1 R: {0} G: {1} B: {2}", color1.R, color1.G, color1.B);
-            Console.ReadKey();
-            */
-
             /*CONDITIONALS
                 //if
                 //if (1 > 0)
@@ -138,16 +128,13 @@ namespace Developer
             */         
             
         }      
-
         /*METHODS
         public static int Square(int x)
         {
             return x * x;
         }
         */
-        
     }   
-    
 }
 
 /*STRUCTURE
@@ -170,62 +157,4 @@ public class Person
     public int Age;
 }
 
-public class Book
-{
-    public string Title;
-    public string Author;
-    public float Price;
-    public bool PaperCover;
-    public Book(string title, string author, float price, bool paperCover)
-    {
-        Title = title;
-        Author = author;
-        Price = price;
-        PaperCover = paperCover;
-    }
-}
-*/
-
-/*CONSTRUCTORS
-public class Color
-{
-    private int r;
-    private int g;
-    private int b;
-
-    public int R
-    {
-        get { return r; }
-        set
-        {
-            if (value <= 255)
-            { r = value; }
-            else { r = 255; }
-        }
-    }
-
-    public int G
-    {
-        get { return g; }
-        set
-        {
-            if (value <= 255)
-            { g = value; }
-
-            { g = 255; }
-        }
-    }
-
-    public int B
-    {
-        get { return b; }
-        set
-        {
-            if (value <= 255)
-            { b = value; }
-
-            { b = 255; }
-        }
-    }
-}
 */
