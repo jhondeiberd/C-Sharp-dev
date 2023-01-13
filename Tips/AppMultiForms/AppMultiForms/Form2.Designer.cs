@@ -30,6 +30,7 @@
         {
             this.mesAccess = new System.Windows.Forms.Label();
             this.close = new System.Windows.Forms.Button();
+            this.txtMessageReturn = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // mesAccess
@@ -47,7 +48,7 @@
             this.close.BackColor = System.Drawing.Color.Teal;
             this.close.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.close.ForeColor = System.Drawing.SystemColors.Control;
-            this.close.Location = new System.Drawing.Point(160, 103);
+            this.close.Location = new System.Drawing.Point(165, 131);
             this.close.Name = "close";
             this.close.Size = new System.Drawing.Size(112, 52);
             this.close.TabIndex = 1;
@@ -55,12 +56,21 @@
             this.close.UseVisualStyleBackColor = false;
             this.close.Click += new System.EventHandler(this.close_Click);
             // 
+            // txtMessageReturn
+            // 
+            this.txtMessageReturn.Location = new System.Drawing.Point(12, 71);
+            this.txtMessageReturn.Multiline = true;
+            this.txtMessageReturn.Name = "txtMessageReturn";
+            this.txtMessageReturn.Size = new System.Drawing.Size(420, 54);
+            this.txtMessageReturn.TabIndex = 3;
+            // 
             // Access
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(444, 203);
+            this.Controls.Add(this.txtMessageReturn);
             this.Controls.Add(this.close);
             this.Controls.Add(this.mesAccess);
             this.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -76,5 +86,6 @@
 
         private Label mesAccess;
         private Button close;
+        private TextBox txtMessageReturn;
     }
 }

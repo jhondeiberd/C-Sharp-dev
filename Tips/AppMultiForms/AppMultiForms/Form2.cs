@@ -12,10 +12,22 @@ namespace AppMultiForms
 {
     public partial class Access : Form
     {
-        public Access(string message)
+        private string message;
+        public string Message
+        {
+            get
+            {
+                return txtMessageReturn.Text;
+            }
+            set 
+            { 
+                message = value; 
+                mesAccess.Text = message;
+            }
+        }
+        public Access()
         {
             InitializeComponent();
-            mesAccess.Text = message;
         }
 
         private void label1_Click(object sender, EventArgs e)
