@@ -36,11 +36,10 @@
             // 
             this.mesAccess.AutoSize = true;
             this.mesAccess.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.mesAccess.Location = new System.Drawing.Point(136, 32);
+            this.mesAccess.Location = new System.Drawing.Point(22, 32);
             this.mesAccess.Name = "mesAccess";
-            this.mesAccess.Size = new System.Drawing.Size(171, 30);
-            this.mesAccess.TabIndex = 0;
-            this.mesAccess.Text = "Congratulations";
+            this.mesAccess.Size = new System.Drawing.Size(0, 30);
+            this.mesAccess.TabIndex = 2;
             this.mesAccess.Click += new System.EventHandler(this.label1_Click);
             // 
             // close
@@ -48,7 +47,7 @@
             this.close.BackColor = System.Drawing.Color.Teal;
             this.close.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.close.ForeColor = System.Drawing.SystemColors.Control;
-            this.close.Location = new System.Drawing.Point(163, 85);
+            this.close.Location = new System.Drawing.Point(160, 103);
             this.close.Name = "close";
             this.close.Size = new System.Drawing.Size(112, 52);
             this.close.TabIndex = 1;
@@ -65,7 +64,7 @@
             this.Controls.Add(this.close);
             this.Controls.Add(this.mesAccess);
             this.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Access";
             this.Text = "Access";
             this.ResumeLayout(false);

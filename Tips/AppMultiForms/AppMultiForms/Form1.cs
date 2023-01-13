@@ -29,7 +29,7 @@ namespace AppMultiForms
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            Access access = new Access();
+            Access access = new Access(txtMessageForm.Text);
             if (txtUsername.Text == "admin" && txtPassword.Text == "admin")
             {
                 this.Visible = false;
