@@ -35,12 +35,18 @@ namespace AppMultiForms
                 this.Visible = false;
                 access.Message = txtMessageForm.Text;
                 access.ShowDialog();
-                message.Text = access.Message;
+
+                DialogResult result = access.ShowDialog();
+                if (result == DialogResult.OK)
+                {
+                    message.Text = access.Message;
+                }
             }
             else
             {
                 message.Text = "Invalid username or password";
             }
+            access.Dispose();  //Free the memory
             this.Visible = true;
         }
 

@@ -31,6 +31,7 @@
             this.mesAccess = new System.Windows.Forms.Label();
             this.close = new System.Windows.Forms.Button();
             this.txtMessageReturn = new System.Windows.Forms.TextBox();
+            this.btnSave = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // mesAccess
@@ -48,7 +49,7 @@
             this.close.BackColor = System.Drawing.Color.Teal;
             this.close.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.close.ForeColor = System.Drawing.SystemColors.Control;
-            this.close.Location = new System.Drawing.Point(165, 131);
+            this.close.Location = new System.Drawing.Point(77, 136);
             this.close.Name = "close";
             this.close.Size = new System.Drawing.Size(112, 52);
             this.close.TabIndex = 1;
@@ -64,12 +65,27 @@
             this.txtMessageReturn.Size = new System.Drawing.Size(420, 54);
             this.txtMessageReturn.TabIndex = 3;
             // 
+            // btnSave
+            // 
+            this.btnSave.BackColor = System.Drawing.Color.Teal;
+            this.btnSave.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.btnSave.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnSave.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnSave.Location = new System.Drawing.Point(258, 136);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(112, 52);
+            this.btnSave.TabIndex = 4;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
             // Access
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(444, 203);
+            this.Controls.Add(this.btnSave);
             this.Controls.Add(this.txtMessageReturn);
             this.Controls.Add(this.close);
             this.Controls.Add(this.mesAccess);
@@ -87,5 +103,6 @@
         private Label mesAccess;
         private Button close;
         private TextBox txtMessageReturn;
+        private Button btnSave;
     }
 }
