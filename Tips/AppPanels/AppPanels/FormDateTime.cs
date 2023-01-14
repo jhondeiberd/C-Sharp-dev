@@ -7,9 +7,9 @@ using System.Text;
 
 namespace DateTime
 {
-    public partial class Form1 : Form
+    public partial class FormDateTime : Form
     {
-        public Form1()
+        public FormDateTime()
         {
             InitializeComponent();
         }
@@ -22,6 +22,16 @@ namespace DateTime
         private void timer1_Tick(object sender, EventArgs e)
         {
             label1.Text = DateTime.Now.ToString("HH:mm:ss");
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FormDateTime_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

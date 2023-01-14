@@ -1,6 +1,6 @@
 ﻿namespace DateTime
 {
-    partial class Form1
+    partial class FormDateTime
     {
         /// <summary>
         ///  Required designer variable.
@@ -44,6 +44,7 @@
             this.label1.Size = new System.Drawing.Size(155, 65);
             this.label1.TabIndex = 0;
             this.label1.Text = "label1";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -62,7 +63,7 @@
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // Form1
+            // FormDateTime
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -70,8 +71,9 @@
             this.ClientSize = new System.Drawing.Size(426, 293);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
+            this.Name = "FormDateTime";
             this.Text = "DateTime";
+            this.Load += new System.EventHandler(this.FormDateTime_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

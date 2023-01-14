@@ -1,6 +1,6 @@
 ﻿namespace AppCalculator
 {
-    partial class Form1
+    partial class FormCalculator
     {
         /// <summary>
         ///  Required designer variable.
