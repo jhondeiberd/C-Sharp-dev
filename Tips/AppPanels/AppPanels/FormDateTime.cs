@@ -1,11 +1,6 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Text;
 
 
-namespace DateTime
+namespace AppDateTime
 {
     public partial class FormDateTime : Form
     {
@@ -14,22 +9,18 @@ namespace DateTime
             InitializeComponent();
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void Form1_Load(object sender, EventArgs e)
         {
 
         }
-
+        
         private void timer1_Tick(object sender, EventArgs e)
         {
-            label1.Text = DateTime.Now.ToString("HH:mm:ss");
+            lblTime.Text = DateTime.Now.ToShortTimeString();
+            lblDate.Text = DateTime.Now.ToShortDateString();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void FormDateTime_Load(object sender, EventArgs e)
+        private void lblTime_Click(object sender, EventArgs e)
         {
 
         }

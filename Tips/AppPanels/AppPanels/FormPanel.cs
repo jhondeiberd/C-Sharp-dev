@@ -1,25 +1,25 @@
 using AppCalculator;
-using DateTime;
+using AppDateTime;
 
 namespace AppPanels
 {
-    public partial class Form1 : Form
+    public partial class FormPanel : Form
     {
-        public Form1()
+        public FormPanel()
         {
             InitializeComponent();
         }
         private void OpenForms<T>() where T : Form, new()
         {
-            Form form = panelForm.Controls.OfType<T>().FirstOrDefault();
+            Form form = ContApplication.Controls.OfType<T>().FirstOrDefault();
             if (form == null)
             {
                 form = new T();
                 form.TopLevel = false;
                 form.FormBorderStyle = FormBorderStyle.None;
                 form.Dock = DockStyle.Fill;
-                panelForm.Controls.Add(form);
-                panelForm.Tag = form;
+                ContApplication.Controls.Add(form);
+                ContApplication.Tag = form;
                 form.Show();
                 form.BringToFront();
             }
@@ -34,7 +34,7 @@ namespace AppPanels
         
         private void CloseForms<T>() where T: Form, new ()
         {
-            Form form = panelForm.Controls.OfType<T>().FirstOrDefault();
+            Form form = ContApplication.Controls.OfType<T>().FirstOrDefault();
             if (form != null)
             {
                 form.Close();
@@ -54,7 +54,7 @@ namespace AppPanels
         private void btnCalculator_Click(object sender, EventArgs e)
         {
             CloseForms<FormDateTime>();
-            //OpenForms<>(FormCalculator);
+            OpenForms<FormCalculator>();
         }
     }
 }

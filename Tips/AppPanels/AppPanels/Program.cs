@@ -1,4 +1,6 @@
-namespace DateTime
+using AppPanels;
+
+namespace Panel
 {
     internal static class Program
     {
@@ -11,7 +13,7 @@ namespace DateTime
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new FormDateTime());
+            Application.Run(new FormPanel());
         }
     }
 }

@@ -32,10 +32,10 @@
             this.Number2 = new System.Windows.Forms.TextBox();
             this.Calculate = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.Add = new System.Windows.Forms.RadioButton();
-            this.Sub = new System.Windows.Forms.RadioButton();
-            this.Mult = new System.Windows.Forms.RadioButton();
             this.Div = new System.Windows.Forms.RadioButton();
+            this.Mult = new System.Windows.Forms.RadioButton();
+            this.Sub = new System.Windows.Forms.RadioButton();
+            this.Add = new System.Windows.Forms.RadioButton();
             this.Result = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -44,11 +44,11 @@
             // 
             this.Number1.BackColor = System.Drawing.Color.Navy;
             this.Number1.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower;
-            this.Number1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Number1.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Number1.ForeColor = System.Drawing.SystemColors.Info;
-            this.Number1.Location = new System.Drawing.Point(177, 143);
+            this.Number1.Location = new System.Drawing.Point(177, 133);
             this.Number1.Name = "Number1";
-            this.Number1.Size = new System.Drawing.Size(242, 39);
+            this.Number1.Size = new System.Drawing.Size(242, 50);
             this.Number1.TabIndex = 0;
             this.Number1.Text = "0";
             this.Number1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -58,18 +58,18 @@
             // 
             this.Number2.BackColor = System.Drawing.Color.Navy;
             this.Number2.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower;
-            this.Number2.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Number2.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Number2.ForeColor = System.Drawing.SystemColors.Info;
-            this.Number2.Location = new System.Drawing.Point(177, 213);
+            this.Number2.Location = new System.Drawing.Point(177, 210);
             this.Number2.Name = "Number2";
-            this.Number2.Size = new System.Drawing.Size(242, 39);
+            this.Number2.Size = new System.Drawing.Size(242, 50);
             this.Number2.TabIndex = 1;
             this.Number2.Text = "0";
             this.Number2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // Calculate
             // 
-            this.Calculate.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Calculate.Font = new System.Drawing.Font("Segoe UI", 50.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Calculate.Location = new System.Drawing.Point(177, 284);
             this.Calculate.Name = "Calculate";
             this.Calculate.Size = new System.Drawing.Size(242, 94);
@@ -85,48 +85,33 @@
             this.groupBox1.Controls.Add(this.Sub);
             this.groupBox1.Controls.Add(this.Add);
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.groupBox1.ForeColor = System.Drawing.Color.Blue;
+            this.groupBox1.ForeColor = System.Drawing.Color.Navy;
             this.groupBox1.Location = new System.Drawing.Point(13, 112);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(133, 266);
+            this.groupBox1.Size = new System.Drawing.Size(158, 266);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Operations";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // Add
+            // Div
             // 
-            this.Add.AutoSize = true;
-            this.Add.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Add.Location = new System.Drawing.Point(26, 24);
-            this.Add.Name = "Add";
-            this.Add.Size = new System.Drawing.Size(80, 69);
-            this.Add.TabIndex = 0;
-            this.Add.TabStop = true;
-            this.Add.Text = "+";
-            this.Add.UseVisualStyleBackColor = true;
-            this.Add.CheckedChanged += new System.EventHandler(this.Add_CheckedChanged);
-            // 
-            // Sub
-            // 
-            this.Sub.AutoSize = true;
-            this.Sub.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Sub.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Sub.Location = new System.Drawing.Point(26, 79);
-            this.Sub.Name = "Sub";
-            this.Sub.Size = new System.Drawing.Size(65, 69);
-            this.Sub.TabIndex = 1;
-            this.Sub.TabStop = true;
-            this.Sub.Text = "-";
-            this.Sub.UseVisualStyleBackColor = true;
-            this.Sub.CheckedChanged += new System.EventHandler(this.Sub_CheckedChanged);
+            this.Div.AutoSize = true;
+            this.Div.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Div.Location = new System.Drawing.Point(40, 195);
+            this.Div.Name = "Div";
+            this.Div.Size = new System.Drawing.Size(67, 69);
+            this.Div.TabIndex = 3;
+            this.Div.TabStop = true;
+            this.Div.Text = "/";
+            this.Div.UseVisualStyleBackColor = true;
             // 
             // Mult
             // 
             this.Mult.AutoSize = true;
             this.Mult.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Mult.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Mult.Location = new System.Drawing.Point(26, 132);
+            this.Mult.Location = new System.Drawing.Point(40, 135);
             this.Mult.Name = "Mult";
             this.Mult.Size = new System.Drawing.Size(73, 69);
             this.Mult.TabIndex = 2;
@@ -135,25 +120,40 @@
             this.Mult.UseVisualStyleBackColor = true;
             this.Mult.CheckedChanged += new System.EventHandler(this.Mult_CheckedChanged);
             // 
-            // Div
+            // Sub
             // 
-            this.Div.AutoSize = true;
-            this.Div.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Div.Location = new System.Drawing.Point(26, 192);
-            this.Div.Name = "Div";
-            this.Div.Size = new System.Drawing.Size(67, 69);
-            this.Div.TabIndex = 3;
-            this.Div.TabStop = true;
-            this.Div.Text = "/";
-            this.Div.UseVisualStyleBackColor = true;
+            this.Sub.AutoSize = true;
+            this.Sub.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Sub.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.Sub.Location = new System.Drawing.Point(40, 82);
+            this.Sub.Name = "Sub";
+            this.Sub.Size = new System.Drawing.Size(65, 69);
+            this.Sub.TabIndex = 1;
+            this.Sub.TabStop = true;
+            this.Sub.Text = "-";
+            this.Sub.UseVisualStyleBackColor = true;
+            this.Sub.CheckedChanged += new System.EventHandler(this.Sub_CheckedChanged);
+            // 
+            // Add
+            // 
+            this.Add.AutoSize = true;
+            this.Add.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Add.Location = new System.Drawing.Point(40, 27);
+            this.Add.Name = "Add";
+            this.Add.Size = new System.Drawing.Size(80, 69);
+            this.Add.TabIndex = 0;
+            this.Add.TabStop = true;
+            this.Add.Text = "+";
+            this.Add.UseVisualStyleBackColor = true;
+            this.Add.CheckedChanged += new System.EventHandler(this.Add_CheckedChanged);
             // 
             // Result
             // 
-            this.Result.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.Result.BackColor = System.Drawing.Color.Snow;
             this.Result.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower;
             this.Result.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Result.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.Result.Location = new System.Drawing.Point(12, 15);
+            this.Result.Location = new System.Drawing.Point(12, 17);
             this.Result.Multiline = true;
             this.Result.Name = "Result";
             this.Result.Size = new System.Drawing.Size(407, 91);
@@ -161,7 +161,7 @@
             this.Result.Text = "0";
             this.Result.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // Form1
+            // FormCalculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -172,7 +172,7 @@
             this.Controls.Add(this.Calculate);
             this.Controls.Add(this.Number2);
             this.Controls.Add(this.Number1);
-            this.Name = "Form1";
+            this.Name = "FormCalculator";
             this.Text = "Calculator";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);

@@ -1,4 +1,4 @@
-﻿namespace DateTime
+﻿namespace AppDateTime
 {
     partial class FormDateTime
     {
@@ -29,34 +29,33 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblTime = new System.Windows.Forms.Label();
+            this.lblDate = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
-            // label1
+            // lblTime
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.label1.Location = new System.Drawing.Point(136, 50);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(155, 65);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.lblTime.AutoSize = true;
+            this.lblTime.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblTime.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.lblTime.Location = new System.Drawing.Point(156, 57);
+            this.lblTime.Name = "lblTime";
+            this.lblTime.Size = new System.Drawing.Size(273, 106);
+            this.lblTime.TabIndex = 0;
+            this.lblTime.Text = "label1";
+            this.lblTime.Click += new System.EventHandler(this.lblTime_Click);
             // 
-            // label2
+            // lblDate
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.Lime;
-            this.label2.Location = new System.Drawing.Point(136, 167);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(120, 50);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "label2";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.lblDate.AutoSize = true;
+            this.lblDate.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblDate.ForeColor = System.Drawing.Color.YellowGreen;
+            this.lblDate.Location = new System.Drawing.Point(97, 177);
+            this.lblDate.Name = "lblDate";
+            this.lblDate.Size = new System.Drawing.Size(205, 81);
+            this.lblDate.TabIndex = 1;
+            this.lblDate.Text = "label1";
             // 
             // timer1
             // 
@@ -65,15 +64,15 @@
             // 
             // FormDateTime
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ClientSize = new System.Drawing.Size(426, 293);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(512, 305);
+            this.Controls.Add(this.lblDate);
+            this.Controls.Add(this.lblTime);
             this.Name = "FormDateTime";
-            this.Text = "DateTime";
-            this.Load += new System.EventHandler(this.FormDateTime_Load);
+            this.Text = "Date-Time";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -81,8 +80,8 @@
 
         #endregion
 
-        private Label label1;
-        private Label label2;
+        private Label lblTime;
+        private Label lblDate;
         private System.Windows.Forms.Timer timer1;
     }
 }
