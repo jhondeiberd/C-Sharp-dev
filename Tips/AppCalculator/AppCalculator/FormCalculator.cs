@@ -16,9 +16,34 @@ namespace AppCalculator
             if (Add.Checked == true) { result = a + b; }
             if (Sub.Checked == true) { result = a - b;}
             if (Mult.Checked == true) { result = a * b;}
-            if (Div.Checked == true) { result = a / b;}
+            if (Div.Checked == true) 
+            {
+                Divition divition = new Divition();
+                try
+                {
+                    result = divition.SetDivition(a,b);
+                }
+                catch(Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
 
             Result.Text = result.ToString();
+        }
+
+        public class Divition
+        {
+            public double SetDivition(double divition, double divitor)
+            {
+                if (divitor == 0)
+                {
+                    throw new Exception(string.Format("The divition by 0 is not posible"));
+                } else
+                {
+                    return(divition / divitor);
+                }
+            }
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
