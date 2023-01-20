@@ -10,4 +10,11 @@ shurtcut Visual Studio 2022
 		//TODO: name
 		Using by Menu or Control W,B
 		
+	4. Snippet code (Double tap)
+		cw: 	Console.Write()
+		ctor:	Constructor
+		prop:	Class property
+		try:	try catch block
+		
+		
 		
