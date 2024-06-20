@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace HouseBuilder
+namespace BackEnd.TextFiles
 {
     class Program
     {
