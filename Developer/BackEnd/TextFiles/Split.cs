@@ -6,6 +6,7 @@ namespace BackEnd.TextFiles
     {
         static void Main(string[] args)
         {
+            //Split variables with differents name in a folder
             string sfiles = "metacoll.updates.D20240613.T213016.WebsiteDUMP.3.mrc,metacoll.updates.D20240613.T213016.WebsiteDUMP.2.mrc";
 
             var test11 = GetDateStringFromWMSzipFile(sfiles.Split(',')[0]);
