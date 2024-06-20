@@ -1,14 +1,15 @@
-﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
-namespace BackEnd.TextFiles
+namespace TextFiles
 {
-    class Program
+    public class Split
     {
-        static void Main(string[] args)
-        {
-            //Split variables with differents name in a folder
-            string sfiles = "metacoll.updates.D20240613.T213016.WebsiteDUMP.3.mrc,metacoll.updates.D20240613.T213016.WebsiteDUMP.2.mrc";
+        //Split variables with differents name in a folder  
 
+        public static IEnumerable<object> GetDateStringFromWMSzip()
+        {
+            string sfiles = "metacoll.updates.D20240613.T213016.WebsiteDUMP.3.mrc,metacoll.updates.D20240613.T213016.WebsiteDUMP.2.mrc";
             var test11 = GetDateStringFromWMSzipFile(sfiles.Split(',')[0]);
 
             var f3 = sfiles.Split(',')
@@ -18,11 +19,13 @@ namespace BackEnd.TextFiles
                     countGroup = x.Count()
                 })
                 .Where(x => x.countGroup > 2);
+            return f3;
+        }
 
-            public static string GetDateStringFromWMSzipFile(string Filename)
-            {
-                return Filename.Split('.')[2];
-            }
+        public static string GetDateStringFromWMSzipFile(string Filename)
+        {
+            return Filename.Split('.')[2];
         }
     }
+
 }
