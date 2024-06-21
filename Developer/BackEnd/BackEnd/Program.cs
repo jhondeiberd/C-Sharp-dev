@@ -7,11 +7,10 @@ namespace BackEnd
     {
         static void Main()
         {
-            Console.WriteLine("------------------------------------------------------------");
+            Console.WriteLine("Hello!");
             var split = Split.GetDateStringFromWMSzip();
-
+            var files = ListFiles.GetFiles();
+    
         }
-
-
     }
 }

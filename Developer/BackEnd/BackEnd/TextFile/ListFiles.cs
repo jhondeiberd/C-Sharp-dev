@@ -1,6 +1,17 @@
 using System.Collections.Generic;
 using System.IO;
 
-string mrkpath = @"C:\SoftwareData\CCA.LSP.API\";
+namespace TextFiles
+{
+    public class ListFiles
+    {
+        //Get all the files in folder
+        public static IEnumerable<object> GetFiles()
+        {
+            string path1 = @"C:\SoftwareData\CCA.LSP.API\";
+            IEnumerable<string> files = Directory.EnumerateFiles(path1, "*.mrc").ToList();
+            return files;
+        }
+    }
 
-List<string> test11 = Directory.EnumerateFiles(mrkpath, "*.mrc").ToList();
+}
